@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages - VOYAGEUR</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">✦ VOYAGEUR</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="transport.html">Transport</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>></span> <span>Packages</span>
+      </div>
+      <h1>Tour Packages</h1>
+      <p class="hero-sub">All-inclusive experiences, meticulously planned</p>
+    </div>
+  </section>
+
+  <section class="packages-page">
+    <div class="container">
+      <div class="packages-grid">
+        <div class="package-card" id="pkg-bali" data-destination="bali">
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(26,58,26,0.7), rgba(74,124,63,0.7)), url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80') center/cover;">
+            <span class="package-badge most-popular">Most Popular</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-name">Bali Bliss</h3>
+            <div class="package-meta">
+              <span>📅 7 Days / 6 Nights</span>
+              <span>👥 Max 12</span>
+              <span>⭐ 4.8</span>
+            </div>
+            <hr class="divider">
+            <div class="inclusions">
+              <span class="tag">✈️ Flights</span>
+              <span class="tag">🏨 Hotels</span>
+              <span class="tag">🍽️ Meals</span>
+              <span class="tag">🚌 Transfers</span>
+            </div>
+            <div class="package-price">
+              <span class="price">$1,099</span>
+              <span class="per">per person</span>
+            </div>
+            <div class="package-actions">
+              <button class="btn-outline-dark accordion-trigger">View Itinerary ↓</button>
+              <a href="booking.html" class="btn-primary">Book Now →</a>
+            </div>
+            <div class="accordion-content">
+              <p><strong>Day 1-2:</strong> Arrival in Ubud, temple tours, rice terraces</p>
+              <p><strong>Day 3-4:</strong> Beach relaxation in Seminyak, water sports</p>
+              <p><strong>Day 5-6:</strong> Cultural experiences, spa treatments</p>
+              <p><strong>Day 7:</strong> Departure with memories</p>
+            </div>
+          </div>
+        </div>
+        <div class="package-card" id="pkg-santorini" data-destination="santorini">
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(13,59,110,0.7), rgba(91,155,213,0.7)), url('https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80') center/cover;">
+            <span class="package-badge best-value">Best Value</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-name">Greek Island Hopper</h3>
+            <div class="package-meta">
+              <span>📅 10 Days / 9 Nights</span>
+              <span>👥 Max 16</span>
+              <span>⭐ 4.9</span>
+            </div>
+            <hr class="divider">
+            <div class="inclusions">
+              <span class="tag">✈️ Flights</span>
+              <span class="tag">🏨 Hotels</span>
+              <span class="tag">🍽️ Meals</span>
+              <span class="tag">🚌 Transfers</span>
+            </div>
+            <div class="package-price">
+              <span class="price">$1,899</span>
+              <span class="per">per person</span>
+            </div>
+            <div class="package-actions">
+              <button class="btn-outline-dark accordion-trigger">View Itinerary ↓</button>
+              <a href="booking.html" class="btn-primary">Book Now →</a>
+            </div>
+            <div class="accordion-content">
+              <p><strong>Day 1-3:</strong> Athens exploration, Acropolis, museums</p>
+              <p><strong>Day 4-6:</strong> Santorini sunsets, wine tasting</p>
+              <p><strong>Day 7-9:</strong> Mykonos beaches, nightlife</p>
+              <p><strong>Day 10:</strong> Return journey</p>
+            </div>
+          </div>
+        </div>
+        <div class="package-card" id="pkg-japan" data-destination="tokyo japan">
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(74,14,46,0.7), rgba(194,24,91,0.7)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80') center/cover;">
+            <span class="package-badge seasonal">Seasonal</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-name">Japan Cherry Blossom</h3>
+            <div class="package-meta">
+              <span>📅 8 Days / 7 Nights</span>
+              <span>👥 Max 10</span>
+              <span>⭐ 4.9</span>
+            </div>
+            <hr class="divider">
+            <div class="inclusions">
+              <span class="tag">✈️ Flights</span>
+              <span class="tag">🏨 Hotels</span>
+              <span class="tag">🍽️ Meals</span>
+              <span class="tag">🚌 Transfers</span>
+            </div>
+            <div class="package-price">
+              <span class="price">$1,499</span>
+              <span class="per">per person</span>
+            </div>
+            <div class="package-actions">
+              <button class="btn-outline-dark accordion-trigger">View Itinerary ↓</button>
+              <a href="booking.html" class="btn-primary">Book Now →</a>
+            </div>
+            <div class="accordion-content">
+              <p><strong>Day 1-3:</strong> Tokyo modern culture, cherry blossom viewing</p>
+              <p><strong>Day 4-5:</strong> Kyoto temples, traditional tea ceremony</p>
+              <p><strong>Day 6-7:</strong> Osaka food tours, castle visits</p>
+              <p><strong>Day 8:</strong> Departure</p>
+            </div>
+          </div>
+        </div>
+        <div class="package-card" id="pkg-safari" data-destination="safari">
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(122,41,0,0.7), rgba(230,74,25,0.7)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80') center/cover;">
+            <span class="package-badge adventure">Adventure</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-name">African Safari</h3>
+            <div class="package-meta">
+              <span>📅 6 Days / 5 Nights</span>
+              <span>👥 Max 8</span>
+              <span>⭐ 5.0</span>
+            </div>
+            <hr class="divider">
+            <div class="inclusions">
+              <span class="tag">✈️ Flights</span>
+              <span class="tag">🏨 Lodges</span>
+              <span class="tag">🍽️ Meals</span>
+              <span class="tag">🚌 Game Drives</span>
+            </div>
+            <div class="package-price">
+              <span class="price">$2,299</span>
+              <span class="per">per person</span>
+            </div>
+            <div class="package-actions">
+              <button class="btn-outline-dark accordion-trigger">View Itinerary ↓</button>
+              <a href="booking.html" class="btn-primary">Book Now →</a>
+            </div>
+            <div class="accordion-content">
+              <p><strong>Day 1-2:</strong> Arrival, evening game drive</p>
+              <p><strong>Day 3-4:</strong> Full-day safaris, Big Five spotting</p>
+              <p><strong>Day 5:</strong> Hot air balloon safari, bush dinner</p>
+              <p><strong>Day 6:</strong> Morning drive, departure</p>
+            </div>
+          </div>
+        </div>
+        <div class="package-card" id="pkg-maldives" data-destination="maldives">
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(0,61,71,0.7), rgba(0,131,143,0.7)), url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80') center/cover;">
+            <span class="package-badge luxury">Luxury</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-name">Maldives Overwater</h3>
+            <div class="package-meta">
+              <span>📅 5 Days / 4 Nights</span>
+              <span>👥 Max 2</span>
+              <span>⭐ 5.0</span>
+            </div>
+            <hr class="divider">
+            <div class="inclusions">
+              <span class="tag">✈️ Flights</span>
+              <span class="tag">🏨 Villa</span>
+              <span class="tag">🍽️ Meals</span>
+              <span class="tag">🚌 Transfers</span>
+            </div>
+            <div class="package-price">
+              <span class="price">$2,899</span>
+              <span class="per">per person</span>
+            </div>
+            <div class="package-actions">
+              <button class="btn-outline-dark accordion-trigger">View Itinerary ↓</button>
+              <a href="booking.html" class="btn-primary">Book Now →</a>
+            </div>
+            <div class="accordion-content">
+              <p><strong>Day 1:</strong> Seaplane arrival, villa check-in</p>
+              <p><strong>Day 2-3:</strong> Snorkeling, spa treatments, private dining</p>
+              <p><strong>Day 4:</strong> Sunset cruise, beach activities</p>
+              <p><strong>Day 5:</strong> Leisure morning, departure</p>
+            </div>
+          </div>
+        </div>
+        <div class="package-card" id="pkg-europe" data-destination="paris rome europe">
+          <div class="package-image" style="background: linear-gradient(135deg, rgba(28,40,51,0.7), rgba(74,85,104,0.7)), url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80') center/cover;">
+            <span class="package-badge epic">Epic</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-name">European Grand Tour</h3>
+            <div class="package-meta">
+              <span>📅 14 Days / 13 Nights</span>
+              <span>👥 Max 20</span>
+              <span>⭐ 4.8</span>
+            </div>
+            <hr class="divider">
+            <div class="inclusions">
+              <span class="tag">✈️ Flights</span>
+              <span class="tag">🏨 Hotels</span>
+              <span class="tag">🍽️ Meals</span>
+              <span class="tag">🚌 Transfers</span>
+            </div>
+            <div class="package-price">
+              <span class="price">$2,499</span>
+              <span class="per">per person</span>
+            </div>
+            <div class="package-actions">
+              <button class="btn-outline-dark accordion-trigger">View Itinerary ↓</button>
+              <a href="booking.html" class="btn-primary">Book Now →</a>
+            </div>
+            <div class="accordion-content">
+              <p><strong>Day 1-3:</strong> Paris - Eiffel Tower, Louvre, Seine cruise</p>
+              <p><strong>Day 4-6:</strong> Rome - Colosseum, Vatican, Trevi Fountain</p>
+              <p><strong>Day 7-9:</strong> Barcelona - Sagrada Familia, Gothic Quarter</p>
+              <p><strong>Day 10-13:</strong> Amsterdam, Brussels, London highlights</p>
+              <p><strong>Day 14:</strong> Return journey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-quote">
+      <p>"The world is a book, and those who do not travel read only one page."</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">✦ VOYAGEUR</div>
+        <p class="footer-desc">Crafting extraordinary journeys and unforgettable experiences across the globe.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Top Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="destinations.html">Bali</a></li>
+          <li><a href="destinations.html">Santorini</a></li>
+          <li><a href="destinations.html">Maldives</a></li>
+          <li><a href="destinations.html">Paris</a></li>
+          <li><a href="destinations.html">Tokyo</a></li>
+          <li><a href="destinations.html">Safari</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li>42 Explorer Street, Coimbatore, Tamil Nadu 641001</li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:hello@voyageur.travel">hello@voyageur.travel</a></li>
+          <li>Mon – Sat: 9AM – 6PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VOYAGEUR. All rights reserved.</p>
+      <p>Explore. Dream. Discover.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="packages.js"></script>
+</body>
+</html>

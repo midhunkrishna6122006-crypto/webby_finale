@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations - VOYAGEUR</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">✦ VOYAGEUR</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="transport.html">Transport</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>></span> <span>Destinations</span>
+      </div>
+      <h1>Explore Destinations</h1>
+      <p class="hero-sub">From tropical paradises to ancient cities</p>
+    </div>
+  </section>
+
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="asia">Asia</button>
+    <button class="filter-btn" data-filter="europe">Europe</button>
+    <button class="filter-btn" data-filter="africa">Africa</button>
+    <button class="filter-btn" data-filter="oceania">Oceania</button>
+    <button class="filter-btn" data-filter="americas">Americas</button>
+  </div>
+
+  <section class="destinations-page">
+    <div class="container">
+      <div class="destinations-page-grid">
+        <div class="destination-card" data-region="asia">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(26,58,26,0.7), rgba(74,124,63,0.7)), url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">ASIA</span>
+          <div class="card-content">
+            <span class="card-country">INDONESIA</span>
+            <h3 class="card-name">Bali</h3>
+            <p class="card-price">From $899</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=bali">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="asia">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(26,26,46,0.7), rgba(15,52,96,0.7)), url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">ASIA</span>
+          <div class="card-content">
+            <span class="card-country">JAPAN</span>
+            <h3 class="card-name">Tokyo</h3>
+            <p class="card-price">From $1,299</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=tokyo">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="asia">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(74,21,21,0.7), rgba(139,38,53,0.7)), url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">ASIA</span>
+          <div class="card-content">
+            <span class="card-country">THAILAND</span>
+            <h3 class="card-name">Bangkok</h3>
+            <p class="card-price">From $799</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=bangkok">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="europe">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(13,59,110,0.7), rgba(91,155,213,0.7)), url('https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">EUROPE</span>
+          <div class="card-content">
+            <span class="card-country">GREECE</span>
+            <h3 class="card-name">Santorini</h3>
+            <p class="card-price">From $1,499</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=santorini">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="europe">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(28,40,51,0.7), rgba(74,85,104,0.7)), url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">EUROPE</span>
+          <div class="card-content">
+            <span class="card-country">FRANCE</span>
+            <h3 class="card-name">Paris</h3>
+            <p class="card-price">From $1,199</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=paris">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="europe">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(61,31,0,0.7), rgba(139,69,19,0.7)), url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">EUROPE</span>
+          <div class="card-content">
+            <span class="card-country">ITALY</span>
+            <h3 class="card-name">Rome</h3>
+            <p class="card-price">From $1,099</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=rome">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="asia">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(0,61,71,0.7), rgba(0,131,143,0.7)), url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">ASIA</span>
+          <div class="card-content">
+            <span class="card-country">MALDIVES</span>
+            <h3 class="card-name">Maldives</h3>
+            <p class="card-price">From $2,199</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=maldives">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="oceania">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(26,42,74,0.7), rgba(61,90,140,0.7)), url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">OCEANIA</span>
+          <div class="card-content">
+            <span class="card-country">AUSTRALIA</span>
+            <h3 class="card-name">Sydney</h3>
+            <p class="card-price">From $1,599</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=sydney">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="africa">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(122,41,0,0.7), rgba(230,74,25,0.7)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">AFRICA</span>
+          <div class="card-content">
+            <span class="card-country">KENYA</span>
+            <h3 class="card-name">Safari</h3>
+            <p class="card-price">From $1,899</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=safari">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="americas">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(14,61,82,0.7), rgba(201,150,62,0.25)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">AMERICAS</span>
+          <div class="card-content">
+            <span class="card-country">USA</span>
+            <h3 class="card-name">New York</h3>
+            <p class="card-price">From $1,399</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=newyork">Explore →</a>
+        </div>
+        <div class="destination-card" data-region="americas">
+          <div class="dest-bg" style="background: linear-gradient(135deg, rgba(191,54,12,0.7), rgba(201,150,62,0.25)), url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <span class="region-badge">AMERICAS</span>
+          <div class="card-content">
+            <span class="card-country">BRAZIL</span>
+            <h3 class="card-name">Rio de Janeiro</h3>
+            <p class="card-price">From $1,299</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore-btn btn-outline-white" href="packages.html?destination=rio">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-quote">
+      <p>"The world is a book, and those who do not travel read only one page."</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">✦ VOYAGEUR</div>
+        <p class="footer-desc">Crafting extraordinary journeys and unforgettable experiences across the globe.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Top Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="destinations.html">Bali</a></li>
+          <li><a href="destinations.html">Santorini</a></li>
+          <li><a href="destinations.html">Maldives</a></li>
+          <li><a href="destinations.html">Paris</a></li>
+          <li><a href="destinations.html">Tokyo</a></li>
+          <li><a href="destinations.html">Safari</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li>42 Explorer Street, Coimbatore, Tamil Nadu 641001</li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:hello@voyageur.travel">hello@voyageur.travel</a></li>
+          <li>Mon – Sat: 9AM – 6PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VOYAGEUR. All rights reserved.</p>
+      <p>Explore. Dream. Discover.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+  <script src="destinations.js"></script>
+</body>
+</html>

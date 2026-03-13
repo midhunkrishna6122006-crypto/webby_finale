@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOYAGEUR - Luxury Travel Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">✦ VOYAGEUR</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="transport.html">Transport</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <span class="section-label">✦ Luxury Travel Experiences</span>
+      <h1>Discover the World<br><span class="gold-text">Your Way.</span></h1>
+      <p class="hero-sub">Handcrafted journeys to 120+ countries. Unforgettable experiences, flawlessly planned.</p>
+      <div class="hero-search">
+        <div class="search-field">
+          <span class="search-icon">📍</span>
+          <input type="text" placeholder="Where to?">
+        </div>
+        <div class="search-field">
+          <span class="search-icon">📅</span>
+          <input type="date">
+        </div>
+        <div class="search-field">
+          <span class="search-icon">👥</span>
+          <input type="number" placeholder="Travelers" min="1">
+        </div>
+        <button class="btn-primary" type="button" id="heroSearchBtn">Search</button>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">⭐ 4.9 Rated Agency</span>
+        <span class="badge">🏆 Award Winning 2024</span>
+        <span class="badge">✈️ 500+ Destinations</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <section class="marquee-section">
+    <div class="marquee-track">
+      <span>✦ BALI ✦ SANTORINI ✦ MALDIVES ✦ PARIS ✦ KYOTO ✦ SAFARI ✦ NEW YORK ✦ DUBAI ✦ SYDNEY ✦ ROME ✦ BALI ✦ SANTORINI ✦ MALDIVES ✦ PARIS ✦ KYOTO ✦ SAFARI ✦</span>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stat-item">
+      <div>
+        <span class="stat-number" data-target="120">0</span>
+        <span class="stat-plus">+</span>
+      </div>
+      <p class="stat-label">Countries</p>
+    </div>
+    <div class="stat-item">
+      <div>
+        <span class="stat-number" data-target="500">0</span>
+        <span class="stat-plus">+</span>
+      </div>
+      <p class="stat-label">Packages</p>
+    </div>
+    <div class="stat-item">
+      <div>
+        <span class="stat-number" data-target="50">0</span>
+        <span class="stat-plus">K+</span>
+      </div>
+      <p class="stat-label">Travelers</p>
+    </div>
+    <div class="stat-item">
+      <div>
+        <span class="stat-number" data-target="15">0</span>
+        <span class="stat-plus">+</span>
+      </div>
+      <p class="stat-label">Years</p>
+    </div>
+  </section>
+
+  <section class="featured-destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">✦ TOP PICKS</span>
+        <h2>Popular Destinations</h2>
+      </div>
+      <div class="destinations-grid">
+        <div class="dest-card" style="grid-row: 1/3; grid-column: 1/2;">
+          <div class="card-bg" style="background: linear-gradient(135deg, rgba(26,58,26,0.7), rgba(74,124,63,0.7)), url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-country">INDONESIA</span>
+            <h3 class="card-name">Bali</h3>
+            <p class="card-price">From $899</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore btn-outline-white" href="destinations.html">Explore</a>
+        </div>
+        <div class="dest-card" style="grid-row: 1/2; grid-column: 2/3;">
+          <div class="card-bg" style="background: linear-gradient(135deg, rgba(13,59,110,0.7), rgba(91,155,213,0.7)), url('https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-country">GREECE</span>
+            <h3 class="card-name">Santorini</h3>
+            <p class="card-price">From $1,499</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore btn-outline-white" href="destinations.html">Explore</a>
+        </div>
+        <div class="dest-card" style="grid-row: 1/2; grid-column: 3/4;">
+          <div class="card-bg" style="background: linear-gradient(135deg, rgba(74,14,46,0.7), rgba(194,24,91,0.7)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-country">JAPAN</span>
+            <h3 class="card-name">Kyoto</h3>
+            <p class="card-price">From $1,099</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore btn-outline-white" href="destinations.html">Explore</a>
+        </div>
+        <div class="dest-card" style="grid-row: 2/3; grid-column: 2/3;">
+          <div class="card-bg" style="background: linear-gradient(135deg, rgba(0,61,71,0.7), rgba(0,131,143,0.7)), url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-country">MALDIVES</span>
+            <h3 class="card-name">Maldives</h3>
+            <p class="card-price">From $2,199</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore btn-outline-white" href="destinations.html">Explore</a>
+        </div>
+        <div class="dest-card" style="grid-row: 2/3; grid-column: 3/4;">
+          <div class="card-bg" style="background: linear-gradient(135deg, rgba(28,40,51,0.7), rgba(74,85,104,0.7)), url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-country">FRANCE</span>
+            <h3 class="card-name">Paris</h3>
+            <p class="card-price">From $1,199</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore btn-outline-white" href="destinations.html">Explore</a>
+        </div>
+        <div class="dest-card" style="grid-row: 3/4; grid-column: 1/4;">
+          <div class="card-bg" style="background: linear-gradient(135deg, rgba(122,41,0,0.7), rgba(230,74,25,0.7)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&q=80') center/cover;"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="card-country">AFRICA</span>
+            <h3 class="card-name">Safari Adventure</h3>
+            <p class="card-price">From $1,899</p>
+            <div class="card-stars">★★★★★</div>
+          </div>
+          <a class="card-explore btn-outline-white" href="destinations.html">Explore</a>
+        </div>
+      </div>
+      <div class="section-footer">
+        <a href="destinations.html" class="view-all">View All Destinations →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">✦ WHY CHOOSE US</span>
+        <h2>Travel with Confidence</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🛡️</span>
+          <h3 class="feature-title">Safe & Secure</h3>
+          <p class="feature-desc">Your safety is our priority. All bookings are protected with comprehensive insurance coverage.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💰</span>
+          <h3 class="feature-title">Best Price</h3>
+          <p class="feature-desc">We guarantee the best rates with our price match promise and exclusive partner deals.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎯</span>
+          <h3 class="feature-title">Expert Guides</h3>
+          <p class="feature-desc">Travel with certified local guides who bring destinations to life with insider knowledge.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📞</span>
+          <h3 class="feature-title">24/7 Support</h3>
+          <p class="feature-desc">Round-the-clock assistance wherever you are. We're always here when you need us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">✦ TESTIMONIALS</span>
+        <h2>What Our Travelers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <span class="quote-mark">“</span>
+          <p class="quote-text">An absolutely magical experience from start to finish. Every detail was perfectly planned, and we felt taken care of throughout our entire journey.</p>
+          <div class="quote-divider"></div>
+          <div class="testimonial-footer">
+            <div class="avatar">SM</div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">Sarah M.</p>
+              <p class="testimonial-dest">Traveled to Bali</p>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <span class="quote-mark">“</span>
+          <p class="quote-text">Voyageur turned our dream honeymoon into a reality. The accommodations were stunning and the experiences unforgettable. Highly recommend!</p>
+          <div class="quote-divider"></div>
+          <div class="testimonial-footer">
+            <div class="avatar">JP</div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">James & Priya</p>
+              <p class="testimonial-dest">Traveled to Santorini</p>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <span class="quote-mark">“</span>
+          <p class="quote-text">The attention to detail was extraordinary. Our guide was knowledgeable and passionate, making every moment special and memorable.</p>
+          <div class="quote-divider"></div>
+          <div class="testimonial-footer">
+            <div class="avatar">RK</div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">Rahul K.</p>
+              <p class="testimonial-dest">Traveled to Japan</p>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Your Next Adventure Awaits</h2>
+      <p class="cta-subtext">Let us craft your perfect journey. Explore our curated packages or get in touch for a custom experience.</p>
+      <div class="cta-buttons">
+        <a href="packages.html" class="btn-outline-dark">Explore Packages</a>
+        <a href="booking.html" class="btn-outline-dark">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-quote">
+      <p>"The world is a book, and those who do not travel read only one page."</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo">✦ VOYAGEUR</div>
+        <p class="footer-desc">Crafting extraordinary journeys and unforgettable experiences across the globe.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Top Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="destinations.html">Bali</a></li>
+          <li><a href="destinations.html">Santorini</a></li>
+          <li><a href="destinations.html">Maldives</a></li>
+          <li><a href="destinations.html">Paris</a></li>
+          <li><a href="destinations.html">Tokyo</a></li>
+          <li><a href="destinations.html">Safari</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li>42 Explorer Street, Coimbatore, Tamil Nadu 641001</li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:hello@voyageur.travel">hello@voyageur.travel</a></li>
+          <li>Mon – Sat: 9AM – 6PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 VOYAGEUR. All rights reserved.</p>
+      <p>Explore. Dream. Discover.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
