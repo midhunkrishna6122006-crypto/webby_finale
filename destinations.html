@@ -6,8 +6,10 @@
   <title>Destinations - VOYAGEUR</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 </head>
-<body>
+<body data-destination="bali">
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a class="nav-logo" href="index.html">✦ VOYAGEUR</a>
@@ -192,6 +194,18 @@
     </div>
   </section>
 
+  <section class="vr-section" id="vrSection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">✦ VIRTUAL EXPERIENCE</span>
+        <h2>Explore in VR</h2>
+        <p class="vr-label">Drag to explore famous places in 360°</p>
+      </div>
+      <div class="vr-scene-switcher"></div>
+      <div id="panorama" class="vr-viewer"></div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="footer-quote">
       <p>"The world is a book, and those who do not travel read only one page."</p>
@@ -247,5 +261,6 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="main.js"></script>
   <script src="destinations.js"></script>
+  <script src="vr.js"></script>
 </body>
 </html>
